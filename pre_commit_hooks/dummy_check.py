@@ -25,7 +25,7 @@ def main(argv=None):
     files_str = run_process('pwd')
     print(f'files_str: {files_str}')
 
-    p = run_process('python -m pip list --format=json')
+    p = os.popen('python -m pip list --format=json')
 
     # dependencies = []
     print(f'p: {p}')
