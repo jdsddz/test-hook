@@ -1,0 +1,7 @@
+-   id: dependencies-check
+    name: dummy
+    description: A test dummy
+    entry: dummy_check
+    language: python
+    files: requirements
+    
