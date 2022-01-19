@@ -22,7 +22,9 @@ def main(argv=None):
     #   print(f'file_path: {file_path}')
     # stream = os.popen('ls')
     # output = stream.read()
-    # files_str = run_process('ls')
+    files_str = run_process('ls')
+    print(f'files_str: {files_str}')
+
     p = run_process('python -m pip list --format=json')
 
     # dependencies = []

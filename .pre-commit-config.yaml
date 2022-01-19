@@ -1,0 +1,5 @@
+- repo: local
+  hooks:
+    - id: dummy_check
+      entry: dummy_check
+      language: system
