@@ -33,6 +33,7 @@ def main(argv=None):
   output = stream.read()
   print(f'output: {output}')
   print(f'aaaaadbdd')
+  print(type(output))
   return 1234
 
 
