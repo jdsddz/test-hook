@@ -1,5 +1,6 @@
 import sys
 import argparse
+import os
 
 def build_parser():
     parser = argparse.ArgumentParser()
@@ -28,6 +29,9 @@ def main(argv=None):
   print(f'args_rest: {args_rest}')
   for file_path in parsed_args.files:
     print(f'file_path: {file_path}')
+  stream = os.popen('ls')
+  output = stream.read()
+  print(f'output: {output}')
   print(f'aaaaadbdd')
   return 1234
 
