@@ -19,15 +19,15 @@ def main(argv=None):
     #   print(f'file_path: {file_path}')
     # stream = os.popen('ls')
     # output = stream.read()
-    files_str = run_process('ls')
+    # files_str = run_process('ls')
     p = run_process('pip freeze')
-    dependencies = []
-    print(f'p: {p}')
-    if 'Pipfile' in files_str:
-        dependencies = run_process('pip freeze').split('\n')
-    elif 'pom.xml' in files_str:
-        dependencies = run_process('pip freeze').split('\n')
-    print(f'list: {dependencies}')
+    # dependencies = []
+    # print(f'p: {p}')
+    # if 'Pipfile' in files_str:
+    #     dependencies = run_process('pip freeze').split('\n')
+    # elif 'pom.xml' in files_str:
+    #     dependencies = run_process('pip freeze').split('\n')
+    # print(f'list: {dependencies}')
     # print(f'output: {output}')
     print(f'aaaaadbdd')
     # print(type(output))
