@@ -1,0 +1,9 @@
+README.md
+setup.py
+pre_commit_hooks/__init__.py
+pre_commit_hooks/dummy_check.py
+test_hook.egg-info/PKG-INFO
+test_hook.egg-info/SOURCES.txt
+test_hook.egg-info/dependency_links.txt
+test_hook.egg-info/entry_points.txt
+test_hook.egg-info/top_level.txt
