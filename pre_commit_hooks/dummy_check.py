@@ -26,8 +26,8 @@ def main(argv=None):
   parsed_args, args_rest = parser.parse_known_args(argv)
   print(f'parsed_args: {parsed_args}')
   print(f'args_rest: {args_rest}')
-  # for file_path in parsed_args.files:
-  #   print(f'file_path: {file_path}')
+  for file_path in parsed_args.files:
+    print(f'file_path: {file_path}')
   print(f'aaaaadbdd')
   return 1234
 
