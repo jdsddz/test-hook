@@ -2,7 +2,6 @@ import sys
 import argparse
 import os
 import subprocess
-from pipfile import Pipfile
 
 
 def run_process(cmd_arg):
