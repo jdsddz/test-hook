@@ -3,11 +3,11 @@ from setuptools import setup
 
 setup(
     name='test-hook',
-    packages=find_packages('.'),
+    packages=find_packages(),
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'dummy_check = dummy_check:main',
+            'dummy_check = pre_commit_hooks.dummy_check:main',
         ],
     },
 )
