@@ -3,7 +3,6 @@ import argparse
 import os
 import subprocess
 from pipfile import Pipfile
-from pipcheck import Pipcheck
 
 
 def run_process(cmd_arg):
