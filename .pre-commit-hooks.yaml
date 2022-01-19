@@ -1,4 +1,4 @@
--   id: dependencies-check
+-   id: dummy_check
     name: dummy
     description: A test dummy
     entry: dummy_check
