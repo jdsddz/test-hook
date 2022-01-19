@@ -3,6 +3,7 @@ import argparse
 import os
 import subprocess
 from pipfile import Pipfile
+from pipcheck import Pipcheck
 
 
 def run_process(cmd_arg):
@@ -23,7 +24,7 @@ def main(argv=None):
     # stream = os.popen('ls')
     # output = stream.read()
     # files_str = run_process('ls')
-    p = run_process('which pip')
+    p = run_process('python -m pip list --format=json')
 
     # dependencies = []
     print(f'p: {p}')
