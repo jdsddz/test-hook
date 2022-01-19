@@ -6,7 +6,7 @@ import subprocess
 
 def run_process(cmd_arg):
     with subprocess.Popen(cmd_arg, stdout=subprocess.PIPE, shell=True) as proc:
-        return proc.stdout.read()
+        return proc.stdout.read().decode('utf-8')
 
 
 def main(argv=None):
