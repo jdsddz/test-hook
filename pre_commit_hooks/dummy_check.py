@@ -1,9 +1,28 @@
 import sys
 import argparse
 
+def build_parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--full-report",
+        default="--full-report",
+        const="--full-report",
+        action="store_const",
+    )
+    parser.add_argument(
+        "--short-report",
+        dest="full_report",
+        const="--short-report",
+        action="store_const",
+    )
+    # parser.add_argument("--ignore", "-i", action="append")
+    # parser.add_argument("files", nargs="+")
+    return parser
+
 
 def main(argv=None):
-  parser = argparse.ArgumentParser()
+  parser = build_parser()
+  # parser = argparse.ArgumentParser()
   parsed_args, args_rest = parser.parse_known_args(argv)
   print(f'parsed_args: {parsed_args}')
   print(f'args_rest: {args_rest}')
