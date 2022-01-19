@@ -20,8 +20,9 @@ def main(argv=None):
     # stream = os.popen('ls')
     # output = stream.read()
     files_str = run_process('ls')
+    p = run_process('pip freeze')
     dependencies = []
-    # print(f'files_str: {files_str}')
+    print(f'p: {p}')
     if 'Pipfile' in files_str:
         dependencies = run_process('pip freeze').split('\n')
     elif 'pom.xml' in files_str:
