@@ -15,8 +15,8 @@ def build_parser():
         const="--short-report",
         action="store_const",
     )
-    # parser.add_argument("--ignore", "-i", action="append")
-    # parser.add_argument("files", nargs="+")
+    parser.add_argument("--ignore", "-i", action="append")
+    parser.add_argument("files", nargs="+")
     return parser
 
 
