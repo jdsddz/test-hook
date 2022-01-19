@@ -2,6 +2,7 @@ import sys
 import argparse
 import os
 import subprocess
+from pipfile import Pipfile
 
 
 def run_process(cmd_arg):
@@ -20,15 +21,18 @@ def main(argv=None):
     # stream = os.popen('ls')
     # output = stream.read()
     # files_str = run_process('ls')
-    p = run_process('pip freeze')
+    # p = run_process('pip freeze')
+
     # dependencies = []
-    print(f'p: {p}')
+    # print(f'p: {p}')
     # if 'Pipfile' in files_str:
     #     dependencies = run_process('pip freeze').split('\n')
     # elif 'pom.xml' in files_str:
     #     dependencies = run_process('pip freeze').split('\n')
     # print(f'list: {dependencies}')
     # print(f'output: {output}')
+    f = open('Pipfile', 'r')
+    print(f.read())
     print(f'aaaaadbdd')
     # print(type(output))
     return 1234
