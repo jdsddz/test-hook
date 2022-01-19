@@ -19,6 +19,7 @@ def main(argv=None):
     #   print(f'file_path: {file_path}')
     # stream = os.popen('ls')
     # output = stream.read()
+    print(run_process('ls -d pipfile'))
     if run_process('ls -d pipfile') == 'pipfile':
         dependencies = run_process('pip freeze').split('\n')
         print (f'list: {dependencies}')
