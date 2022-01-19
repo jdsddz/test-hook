@@ -3,5 +3,5 @@
     description: A test dummy
     entry: dummy_check
     language: python
-    files: /.*/g
+    files: \.*$
     
