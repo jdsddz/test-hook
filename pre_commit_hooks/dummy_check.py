@@ -22,7 +22,7 @@ def main(argv=None):
     # files_str = run_process('ls')
     p = run_process('pip freeze')
     # dependencies = []
-    # print(f'p: {p}')
+    print(f'p: {p}')
     # if 'Pipfile' in files_str:
     #     dependencies = run_process('pip freeze').split('\n')
     # elif 'pom.xml' in files_str:
