@@ -21,6 +21,7 @@ def main(argv=None):
     # output = stream.read()
     files_str = run_process('ls')
     dependencies = []
+    print(f'files_str: {files_str}')
     if 'pipfile' in files_str:
         dependencies = run_process('pip freeze').split('\n')
     elif 'pom.xml' in files_str:
