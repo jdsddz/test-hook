@@ -3,7 +3,7 @@ import sys
 
 def main(argv=None):
   print(f'aaaaadbdd')
-  return 0
+  return 1
 
 
 if __name__ == "__main__":
